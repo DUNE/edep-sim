@@ -9,10 +9,12 @@ message("Energy Deposition Simulation -- ${VERSION}")
 # Define the options that can be set in the cache, or on the cmake
 # command line.
 set(CMAKE_BUILD_TYPE Debug)
-set(EDEPSIM_DISPLAY TRUE CACHE BOOL
+set(EDEPSIM_DISPLAY FALSE CACHE BOOL
   "If true, compile the edep-disp event display")
 set(EDEPSIM_READONLY FALSE CACHE BOOL
   "If true, then DO NOT use GEANT4")
+set(EDEPSIM_USE_NEST TRUE CACHE BOOL
+  "If true, then make the NEST model available to be directly used")
 
 # Check to see if this is MACOS
 if(APPLE)
