@@ -21,6 +21,7 @@
 
 #include <G4ProcessTable.hh>
 
+#include <G4UnitsTable.hh>
 #include <G4SystemOfUnits.hh>
 
 #include <unistd.h>
