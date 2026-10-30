@@ -3,7 +3,6 @@
 #include <globals.hh>
 
 #include <G4HadronElasticProcess.hh>
-#include <G4HadronFissionProcess.hh>
 #include <G4HadronCaptureProcess.hh>
 #include <G4NeutronInelasticProcess.hh>
 #include <G4VPiKBuilder.hh>

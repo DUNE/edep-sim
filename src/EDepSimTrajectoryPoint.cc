@@ -133,7 +133,9 @@ std::vector<G4AttValue>* EDepSim::TrajectoryPoint::CreateAttValues() const {
 
     values->push_back(G4AttValue("Momentum",
                                  G4BestUnit(fMomentum,"Momentum"),""));
-    values->push_back(G4AttValue("StepStatus",fStepStatus,""));
+    values->push_back(G4AttValue("StepStatus",
+                                 std::to_string(static_cast<int>(fStepStatus)),
+                                 ""));
 
     values->push_back(G4AttValue("PhysVolName",fPhysVolName,""));
 
