@@ -23,6 +23,7 @@
 #include <G4ProcessTable.hh>
 
 #include <G4SystemOfUnits.hh>
+#include <G4UnitsTable.hh>
 
 #include "QGSP_BERT_Bias.hh"
 #include "G4HadronPhysicsQGSP_BERT_Bias.hh"
