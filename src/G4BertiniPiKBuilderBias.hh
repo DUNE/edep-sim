@@ -3,6 +3,7 @@
 #include <globals.hh>
 
 #include <G4HadronElasticProcess.hh>
+#include <G4HadronInelasticProcess.hh>
 #include <G4VPiKBuilder.hh>
 #include <G4CascadeInterface.hh>   
 
@@ -15,12 +16,7 @@ class G4BertiniPiKBuilderBias : public G4VPiKBuilder
     virtual ~G4BertiniPiKBuilderBias() {}
 
     virtual void Build(G4HadronElasticProcess *) final override {}
-    virtual void Build(G4PionPlusInelasticProcess * aP) final override;
-    virtual void Build(G4PionMinusInelasticProcess * aP) final override;
-    virtual void Build(G4KaonPlusInelasticProcess * aP) final override;
-    virtual void Build(G4KaonMinusInelasticProcess * aP) final override;
-    virtual void Build(G4KaonZeroLInelasticProcess * aP) final override;
-    virtual void Build(G4KaonZeroSInelasticProcess * aP) final override;
+    virtual void Build(G4HadronInelasticProcess * aP) final override;
     
     virtual void SetMinEnergy(G4double aM) final override {theMin = aM;}
     virtual void SetMaxEnergy(G4double aM) final override {theMax = aM;}
